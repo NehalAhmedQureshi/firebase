@@ -10,27 +10,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- & boxicon cdn link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ? custom stylesheet -->
+     <link rel="stylesheet" href="../styles/signUp.css">
     <title>SignUp</title>
 </head>
 
 <body>
 
-    <form id="signUpForm">
-        <label for="userImg">
-            <i class='bx bx-user-circle'></i>
-        </label>
-        <input style="display: none;" type="file" class="userImg" id="userImg" />
-        <input type="text" class="userName" placeholder="username" />
-        <input type="text" class="fatherName" placeholder="fathername" />
-        <input type="text" class="userEmail" placeholder="userEmail" />
-        <div class="password">
-            <input type="text" class="userPassword" placeholder="userPassword" />
-            <input type="text" class="confirmPassword" placeholder="confirmPassword"/>
-        </div>
+    <div class="container">
+        <form id="signUpForm">
+            <label id="userimg" for="userImg">
+                <i class='bx bx-user-circle'></i>
+            </label>
+            <input type="file" id="userImg" class="userImg" required/>
+            <input type="text" class="userName" placeholder="username" required />
+            <input type="text" class="fatherName" placeholder="fathername" required/>
+            <input type="email" class="userEmail" placeholder="userEmail" required />
+            <div class="password">
+                <input type="text" class="userPassword" placeholder="userPassword" required />
+                <input type="text" class="confirmPassword" placeholder="confirmPassword"/>
+            </div>
+            <button type="submit">Submit</button>
+    
+        </form>
+    </div>
 
-
-    </form>
-
+    <!--* add script file  -->
+    <script type="module" src="../scripts/signup.js"></script>
 </body>
 
 </html>
