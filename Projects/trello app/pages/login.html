@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * ---------------------- cdnjs font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- * ------------------ custom stylesheet -->
+    <title>Login Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="loginForm">
+            <h1>Login Form</h1>
+            <div class="error"></div>
+            <input type="email" class="userEmail" placeholder="userEmail" required>
+            <div class="password">
+                <input type="password" class="userPassword" placeholder="userPassword" minlength="6" maxlength="14" required>
+                <i class="show fa-solid fa-eye"></i>
+            </div>
+            <button class="submit" type="submit">Log In</button>
+        </form>
+    </div>
+
+    <!-- * ----------- add custom script -->
+     <script type="module" src="../scripts/login.js"></script>
+</body>
+</html>

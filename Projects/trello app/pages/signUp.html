@@ -19,18 +19,22 @@
 
     <div class="container">
         <form id="signUpForm">
+            <h1>SignUp Form</h1>
             <label id="userimg" for="userImg">
                 <i class='bx bx-user-circle'></i>
             </label>
-            <input type="file" id="userImg" class="userImg" required/>
-            <input type="text" class="userName" placeholder="username" required />
-            <input type="text" class="fatherName" placeholder="fathername" required/>
+            <div class="message"></div>
+            <input type="file" id="userImg" class="userImg" required />
+            <input type="text" class="userName" placeholder="username" required  />
+            <input type="text" class="fatherName" placeholder="fathername" required />
             <input type="email" class="userEmail" placeholder="userEmail" required />
             <div class="password">
-                <input type="text" class="userPassword" placeholder="userPassword" required />
-                <input type="text" class="confirmPassword" placeholder="confirmPassword"/>
+                <input type="password" class="userPassword" placeholder="userPassword required" required />
+                <i class="passwordShow fa-solid fa-eye"></i>
+                <input type="password" class="confirmPassword" placeholder="confirmPassword" required/>
+                <i class="confirmPasswordShow fa-solid fa-eye"></i>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="submit">SignUp</button>
     
         </form>
     </div>

@@ -31,7 +31,7 @@ signupForm.addEventListener('submit', async (event) => {
         errorMsg.innerHTML = "Email Already Exists!"
         swal({
             title: "Error!",
-            text: "Invalid UserEmail or UserPassword!",
+            text: "User already exist !",
             type: "error",
             confirmButtonText: "Ok"
           });
