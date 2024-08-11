@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword ,} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword , onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import { getApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getStorage, ref, uploadBytes, getDownloadURL, } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js"
 import { getFirestore , collection , addDoc ,} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
@@ -30,4 +30,4 @@ const storage = getStorage(app)
 const db = getFirestore(app);
 
 //   todo export functions
-export { auth, createUserWithEmailAndPassword, storage, ref, uploadBytes, getDownloadURL, collection , addDoc, db , signInWithEmailAndPassword ,}
+export { auth, createUserWithEmailAndPassword, storage, ref, uploadBytes, getDownloadURL, collection , addDoc, db , signInWithEmailAndPassword ,onAuthStateChanged,}
