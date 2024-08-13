@@ -5,7 +5,6 @@ onAuthStateChanged( auth , (user) => {
         console.log(user.uid);
         
     }else {
-        console.log("SignOut");
-        
+        console.log("SignOut");   
     }
 })
